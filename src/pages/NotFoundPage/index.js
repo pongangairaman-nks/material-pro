@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import "./Error.scss";
+import './Error.scss';
 import errorBg from '../../assets/images/background/error-bg.jpg';
 
-const Error = () => {
+const NotFoundPage = () => {
   return (
     <>
       <div
@@ -11,7 +11,7 @@ const Error = () => {
       >
         <div className="d-flex align-items-center justify-content-center h-100">
           <div className="text-center">
-            <h1 className='error-title'>404</h1>
+            <h1 className="error-title">404</h1>
             <div className="my-3">
               <h4>PAGE NOT FOUND !</h4>
               <span className="text-muted d-block fs-5">
@@ -19,7 +19,7 @@ const Error = () => {
               </span>
             </div>
 
-            <Link to="/starter" className="btn btn-danger">
+            <Link to="/login" className="btn btn-danger">
               Back to home
             </Link>
           </div>
@@ -29,4 +29,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default NotFoundPage;
