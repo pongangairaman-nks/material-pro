@@ -1,102 +1,70 @@
 import MaterialIcon from '@material/react-material-icon';
 
 const SidebarData = [
-  { caption: "Home" },
+  { caption: 'Home' },
   {
-    title: "Dashboard",
-    href: "/starter",
-    icon: <MaterialIcon icon="speed" />,
+    title: 'Dashboards',
+    href: '/dashboards',
     id: 1,
+    icon: <MaterialIcon icon="speed" />,
+    collapisble: true,
+    children: [
+      {
+        title: 'Dashboard 4',
+        href: '/dashboards/dashboard4',
+        icon: <MaterialIcon icon="radio_button_checked" />,
+        id: 1.4,
+        collapisble: false,
+      },
+    ],
+  },
+  // { caption: 'Apps' },
+  {
+    title: 'Notes',
+    href: '/apps/notes',
+    icon: <MaterialIcon icon="description" />,
+    id: 2.1,
     collapisble: false,
   },
-  { caption: "UI" },
+  // { caption: 'UI' },
   {
-    title: "UI Elements",
-    href: "/ui",
+    title: 'UI Elements',
+    href: '/ui',
     id: 2,
-    suffix: "8",
-    suffixColor: "bg-info",
+    suffix: '22',
+    suffixColor: 'bg-info',
     icon: <MaterialIcon icon="grid_view" />,
     collapisble: true,
     children: [
       {
-        title: "Alert",
-        href: "/ui/alerts",
-        icon: <MaterialIcon icon="radio_button_checked" />,
-      },
-      {
-        title: "Buttons",
-        href: "/buttons",
-        icon: <MaterialIcon icon="radio_button_checked" />,
-      },
-      {
-        title: "Cards",
-        href: "/cards",
-        icon: <MaterialIcon icon="radio_button_checked" />,
-      },
-      {
-        title: "Grid",
-        href: "/grid",
-        icon: <MaterialIcon icon="radio_button_checked" />,
-      },
-      {
-        title: "Badges",
-        href: "/badges",
-        icon: <MaterialIcon icon="radio_button_checked" />,
-      },
-      {
-        title: "Table",
-        href: "/table",
-        icon: <MaterialIcon icon="radio_button_checked" />,
-      },
-      {
-        title: "Forms",
-        href: "/forms",
-        icon: <MaterialIcon icon="radio_button_checked" />,
-      },
-      {
-        title: "Breadcrumbs",
-        href: "/breadcrumbs",
-        icon: <MaterialIcon icon="radio_button_checked" />,
-      },
-      {
-        title: "About",
-        href: "/about",
+        title: 'Alert',
+        href: '/ui/alerts',
         icon: <MaterialIcon icon="radio_button_checked" />,
       },
     ],
   },
-
+  // { caption: 'Forms' },
   {
-    title: "DD Menu",
-    href: "/",
-    id: 3,
+    title: 'Form Layouts',
+    href: '/form-layout',
+    icon: <MaterialIcon icon="feed" />,
+    id: 3.1,
     collapisble: true,
-    icon: <MaterialIcon icon="radio_button_checked" />,
     children: [
       {
-        title: "Simple dd 1",
-        href: "/",
+        title: 'Basic Forms',
+        href: '/form-layout/form-basic',
         icon: <MaterialIcon icon="radio_button_checked" />,
-      },
-      {
-        title: "Simple dd 2",
-        href: "/",
-        icon: <MaterialIcon icon="radio_button_checked" />,
-      },
-      {
-        title: "Simple dd 3",
-        href: "/",
-        icon: <MaterialIcon icon="radio_button_checked" />,
-        children: [
-          {
-            title: "Simple dd 1.1",
-            href: "/alerts",
-            icon: <MaterialIcon icon="radio_button_checked" />,
-          },
-        ],
       },
     ],
+  },
+  // { caption: 'Charts' },
+  {
+    title: 'ChartJs',
+    href: '/charts/chartjs',
+    icon: <MaterialIcon icon="area_chart" />,
+    id: 5.2,
+    collapisble: false,
   },
 ];
 

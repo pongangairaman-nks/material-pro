@@ -1,20 +1,21 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  topbarBg: "primary",
+  topbarBg: 'primary',
   customizerSidebar: false,
   isRTL: false,
   isDark: false,
   isMiniSidebar: false,
-  sidebarBg: "white",
+  sidebarBg: 'white',
   isTopbarFixed: true,
   isMobileSidebar: false,
   isSidebarFixed: true,
   isLayoutHorizontal: false,
+  isInnerRightPart: false, // this is for the three column layout right part show hide in table & mobile
 };
 
 export const CustomizerSlice = createSlice({
-  name: "customizer",
+  name: 'customizer',
   initialState,
   reducers: {
     ChangeTopbarColor: (state, action) => {
@@ -47,6 +48,9 @@ export const CustomizerSlice = createSlice({
     ToggleHorizontal: (state) => {
       state.isLayoutHorizontal = !state.isLayoutHorizontal;
     },
+    ToggleInnerRightPart: (state) => {
+      state.isInnerRightPart = !state.isInnerRightPart;
+    },
   },
 });
 
@@ -61,6 +65,7 @@ export const {
   ToggleMobileSidebar,
   FixedSidebar,
   ToggleHorizontal,
+  ToggleInnerRightPart,
 } = CustomizerSlice.actions;
 
 export default CustomizerSlice.reducer;

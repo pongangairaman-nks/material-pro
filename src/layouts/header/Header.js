@@ -44,7 +44,7 @@ const Header = () => {
           <Button
             close
             size="sm"
-            className="ms-auto"
+            className="ms-auto "
             onClick={() => dispatch(ToggleMobileSidebar())}
           />
           </span>

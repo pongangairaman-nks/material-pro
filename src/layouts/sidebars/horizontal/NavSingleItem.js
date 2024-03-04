@@ -14,7 +14,7 @@ const NavSingleItem = ({
   return (
     <NavItem onClick={toggle} className={className}>
       <NavLink tag={Link} to={to} className="gap-3">
-        <span className="sidebarIcon">{icon}</span>
+        <span className="sidebarIcon d-flex align-items-center">{icon}</span>
         <div className="d-flex flex-grow-1 align-items-center gap-2">
           <span>{title}</span>
           {suffix ? (

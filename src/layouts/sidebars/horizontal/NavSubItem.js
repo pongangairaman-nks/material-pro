@@ -14,7 +14,7 @@ const NavSubItem = ({ to, icon, title, items, suffix, activeBck, suffixColor, dd
   return (
     <NavItem className={`collapsed && getActive ? 'activeParent' : '' ${ddType}`}>
       <NavLink to={to} className="gap-3 cursor-pointer" onClick={Handletoggle}>
-        <span className="sidebarIcon">{icon}</span>
+        <span className="sidebarIcon d-flex align-items-center">{icon}</span>
         <div className="d-flex flex-grow-1 align-items-center gap-2">
           <span className="me-auto">{title}</span>
           {suffix ? <span className={`badge  ${suffixColor}`}>{suffix}</span> : ''}
