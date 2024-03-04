@@ -38,7 +38,7 @@ const FullLayout = () => {
             <div className={isFixedSidebar && LayoutHorizontal ? 'HsidebarFixed' : ''}>
               <Outlet />
             </div>
-            <Customizer className={customizerToggle ? 'showCustomizer' : ''} />
+            {/* <Customizer className={customizerToggle ? 'showCustomizer' : ''} /> */}
             {showMobileSidebar || customizerToggle ? <div className="sidebarOverlay" /> : ''}
           </Container>
         </div>

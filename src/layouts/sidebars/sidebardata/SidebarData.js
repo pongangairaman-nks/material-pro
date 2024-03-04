@@ -45,18 +45,10 @@ const SidebarData = [
   },
   // { caption: 'Forms' },
   {
-    title: 'Form Layouts',
-    href: '/form-layout',
+    title: 'Form Basic',
+    href: '/form-layout/form-basic',
     icon: <MaterialIcon icon="feed" />,
     id: 3.1,
-    collapisble: true,
-    children: [
-      {
-        title: 'Basic Forms',
-        href: '/form-layout/form-basic',
-        icon: <MaterialIcon icon="radio_button_checked" />,
-      },
-    ],
   },
   // { caption: 'Charts' },
   {
