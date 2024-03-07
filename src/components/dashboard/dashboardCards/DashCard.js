@@ -10,9 +10,9 @@ const DashCard = ({ children, title, subtitle, actions }) => {
             <CardTitle tag="h4">{title}</CardTitle>
             <CardSubtitle className="text-muted">{subtitle}</CardSubtitle>
           </div>
-          <div className="ms-auto mt-3 mt-md-0">{actions}</div>
+          <div className="ms-auto  mt-md-0">{actions}</div>
         </div>
-        <div className="mt-3">{children}</div>
+        <div>{children}</div>
       </CardBody>
     </Card>
   );

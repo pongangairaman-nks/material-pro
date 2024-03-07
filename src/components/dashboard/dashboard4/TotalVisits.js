@@ -2,6 +2,7 @@ import React from 'react';
 import { VectorMap } from 'react-jvectormap';
 import DashCard from '../dashboardCards/DashCard';
 import '../../../views/maps/VectorMap.css';
+import MapApp from './Map';
 
 const mapData = {
   FR: 540,
@@ -17,8 +18,8 @@ const mapData = {
 const TotalVisits = () => {
   return (
     <DashCard>
-      <div className="text-center mt-3 mb-3">
-        <VectorMap
+      <div className="text-center">
+        {/* <VectorMap
           map="world_mill"
           backgroundColor="transparent"
           zoomOnScroll={false}
@@ -44,9 +45,10 @@ const TotalVisits = () => {
               },
             ],
           }}
-        />
+        /> */}
+        <MapApp />
       </div>
-      <div className="hstack gap-5 mt-5 pt-4 justify-content-start pb-1">
+      <div className="hstack gap-5 justify-content-start pb-1 mt-3">
         <div className="d-flex align-items-center text-success fs-6">
           <i className="bi bi-circle-fill fs-7 me-2"></i>Running
         </div>
