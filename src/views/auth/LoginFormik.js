@@ -42,7 +42,7 @@ const LoginFormik = () => {
                   onSubmit={(fields) => {
                     console.log('fields', fields);
                     if (fields?.email === 'test@gmail.com' && fields?.password === 'test@123') {
-                      navigate('/dashboards/dashboard4');
+                      navigate('/dashboard');
                     } else {
                       alert('Invalid username/password');
                     }
