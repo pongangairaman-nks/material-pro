@@ -3,17 +3,17 @@ import PropTypes from 'prop-types';
 
 import { Col, Card, CardBody, CardTitle, Progress } from 'reactstrap';
 
-const ProgressCardsData = ({ subtext, pColor, pPercent }) => {
+const ProgressCardsData = ({ subtext, pColor, value }) => {
   return (
     <>
       <Col lg={3} md={6}>
         <Card>
-          <CardBody>
+          <CardBody style={{ padding: '8px 8px 16px 12px' }}>
             <CardTitle tag="h3" className="mb-0">
-              {pPercent}%
+              {value}
             </CardTitle>
             <span className="text-muted fw-light fs-6">{subtext}</span>
-            <Progress className="mt-2" color={pColor} value={pPercent} />
+            <Progress className="mt-2" color={pColor} value={value} />
           </CardBody>
         </Card>
       </Col>

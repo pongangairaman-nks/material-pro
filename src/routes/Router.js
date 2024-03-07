@@ -37,7 +37,7 @@ const ThemeRoutes = [
     element: <FullLayout />,
     children: [
       { path: '/', name: 'Login', element: <Navigate to="/auth/login" /> },
-      { path: '/dashboards/dashboard4', name: 'Dashboard 4', exact: true, element: <Dashboard4 /> },
+      { path: '/dashboard', name: 'Dashboard 4', exact: true, element: <Dashboard4 /> },
       { path: '/about', name: 'about', exact: true, element: <About /> },
       { path: '/apps/notes', name: 'notes', exact: true, element: <Notes /> },
       { path: '/ui/alerts', name: 'alerts', exact: true, element: <Alerts /> },

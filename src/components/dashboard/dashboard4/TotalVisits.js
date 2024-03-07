@@ -16,7 +16,7 @@ const mapData = {
 
 const TotalVisits = () => {
   return (
-    <DashCard title="Total Visits" subtitle="January 2022">
+    <DashCard>
       <div className="text-center mt-3 mb-3">
         <VectorMap
           map="world_mill"
@@ -45,6 +45,20 @@ const TotalVisits = () => {
             ],
           }}
         />
+      </div>
+      <div className="hstack gap-5 mt-5 pt-4 justify-content-start pb-1">
+        <div className="d-flex align-items-center text-success fs-6">
+          <i className="bi bi-circle-fill fs-7 me-2"></i>Running
+        </div>
+        <div className="d-flex align-items-center text-primary fs-6">
+          <i className="bi bi-circle-fill fs-7 me-2"></i>Moving
+        </div>
+        <div className="d-flex align-items-center text-warning fs-6">
+          <i className="bi bi-circle-fill fs-7 me-2"></i>Stopped
+        </div>
+        <div className="d-flex align-items-center text-danger fs-6">
+          <i className="bi bi-circle-fill fs-7 me-2"></i>Not Connected
+        </div>
       </div>
     </DashCard>
   );
