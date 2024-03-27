@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { Suspense } from 'react';
 import { useRoutes } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -22,4 +23,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

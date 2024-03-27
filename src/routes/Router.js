@@ -8,18 +8,9 @@ const BlankLayout = Loadable(lazy(() => import('../layouts/BlankLayout')));
 /***** Pages ****/
 
 const Dashboard4 = Loadable(lazy(() => import('../views/dashboards/Dashboard4')));
-const About = Loadable(lazy(() => import('../views/About')));
-
-/***** Apps ****/
-const Notes = Loadable(lazy(() => import('../views/apps/notes/Notes')));
-
-/***** Ui Elements ****/
-const Alerts = Loadable(lazy(() => import('../views/ui/Alerts')));
-
-/***** Form Layout Pages ****/
-const FormBasic = Loadable(lazy(() => import('../views/form-layouts/FormBasic')));
-
-const ChartJs = Loadable(lazy(() => import('../views/charts/ChartJs')));
+const Assets = Loadable(lazy(() => import('../views/assets/Assets')));
+const Devices = Loadable(lazy(() => import('../views/devices/Devices')));
+const Controllers = Loadable(lazy(() => import('../views/controllers/Controllers')));
 
 /***** Auth Pages ****/
 const Error = Loadable(lazy(() => import('../views/auth/Error')));
@@ -38,11 +29,9 @@ const ThemeRoutes = [
     children: [
       { path: '/', name: 'Login', element: <Navigate to="/auth/login" /> },
       { path: '/dashboard', name: 'Dashboard 4', exact: true, element: <Dashboard4 /> },
-      { path: '/about', name: 'about', exact: true, element: <About /> },
-      { path: '/apps/notes', name: 'notes', exact: true, element: <Notes /> },
-      { path: '/ui/alerts', name: 'alerts', exact: true, element: <Alerts /> },
-      { path: '/form-layout/form-basic', name: 'form-basic', exact: true, element: <FormBasic /> },
-      { path: '/charts/chartjs', name: 'chartjs', exact: true, element: <ChartJs /> },
+      { path: '/assets', name: 'about', exact: true, element: <Assets /> },
+      { path: '/devices', name: 'about', exact: true, element: <Devices /> },
+      { path: '/controllers', name: 'about', exact: true, element: <Controllers /> },
     ],
   },
   {
